@@ -34,3 +34,6 @@ c = (foo, bar, baz) -> {
 	}
 	return quux	
 }
+
+wat :: char := 'a' // decl-init
+ugh := "we are in the beam" // type inference?
