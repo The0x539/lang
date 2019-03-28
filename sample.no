@@ -1,0 +1,36 @@
+// var declaration
+x :: int
+/*
+ * var initialization
+ * must happen once and only once before a var is used
+ */
+x := 3
+
+// function declaration
+a :: (int, int) -> bool
+// lambda function definition
+a = (x, y) -> x + 1 == y
+
+// void function with one argument
+b :: (bool) -> ()
+// block function definition
+b = (cond) -> {
+	if cond {
+		print("foo")
+	} else {
+		print("bar")
+	}
+	exit! // func with no args
+}
+
+c :: (int, int, bool) -> int
+c = (foo, bar, baz) -> {
+	quux :: int // declare stuff inside or outside of funcs
+	quux := foo
+	if baz {
+		quux += bar
+	} else {
+		return bar
+	}
+	return quux	
+}
