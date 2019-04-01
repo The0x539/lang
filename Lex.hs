@@ -1,3 +1,5 @@
+module Lex where
+
 type Parse a b = a -> Maybe (b, a)
 
 infixr 3 &>
